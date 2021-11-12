@@ -5,8 +5,10 @@ WORKDIR /app
 
 RUN git clone https://github.com/pawelmalak/snippet-box /app && cd /app
 
+# Create app directory
+COPY . /app
 
-COPY package*.json ./
+# COPY package*.json ./
 
 RUN npm install
 
