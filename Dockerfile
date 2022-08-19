@@ -5,8 +5,7 @@ RUN apk add --no-cache git
 
 WORKDIR /app
 
-
-RUN git clone https://github.com/pawelmalak/snippet-box /app && cd /app
+RUN git clone --branch authentication https://github.com/pawelmalak/snippet-box /app && cd /app 
 
 # Create app directory
 COPY . /app
